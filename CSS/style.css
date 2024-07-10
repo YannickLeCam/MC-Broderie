@@ -72,7 +72,7 @@ nav li:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-header #logo{
+nav #logo{
     position: absolute;
     left: 3%;
     font-family: "MonteCarlo", cursive;
@@ -88,7 +88,7 @@ header #logo{
 
 header{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100vw;
 }
 
@@ -102,7 +102,7 @@ header figure{
 header img {
     position:absolute;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
 }
 #hoverHeaderBanner{
@@ -129,7 +129,7 @@ header h1 {
     font-size: 500%;
     font-weight: 200;
     margin-block-start: 0;
-
+    font-family: "MonteCarlo", cursive;
 }
 header p {
     font-family: "Bona Nova SC", cursive;
@@ -157,6 +157,10 @@ header p:hover{
 #cardContainer .card {
     display: flex;
     flex-direction: column;
+}
+#cardContainer .card h2{
+    margin-bottom: 10%;
+    font-size: x-large;
 }
 #cardContainer .cardHeader {
     height: 30%;
@@ -192,12 +196,12 @@ header p:hover{
 */
 
 #presentation{
-    max-width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
 .pres{
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -216,7 +220,7 @@ header p:hover{
 
 .pres svg {
     height: 50vh;
-    max-width: 50vw;
+    max-width: 50%;
     fill: white;
     transition: 0.5s;
 }
@@ -256,8 +260,16 @@ figure:hover svg{
     Partie Citation
 ======================================================
 */
-
-
+#citation{
+    background-color: var(--main);
+}
+#citation p{
+    padding: 5% 10%;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "MonteCarlo", cursive;
+}
 
 /*
 ======================================================
