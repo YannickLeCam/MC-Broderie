@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --second:rgb(52,201,36);
+    --second:rgb(126, 200, 250);
     --main:rgb(94, 73, 30);
 
 }
@@ -374,12 +374,16 @@ footer #logo{
     transition: 0.3s;
     align-items: stretch;
     padding: 5%;
+    transition: 0.5s;
 }
 #contact:hover,#presence:hover{
-    box-shadow: 40px 40px 0 0 rgba(52,201,36,0.8);
+    box-shadow: 40px 40px 0 0 rgba(126, 200, 250,0.8);;
     transition: 1s;
 }
-
+#contact:hover h2,#presence:hover h2{
+    color: var(--second);
+    transition: 0.5s;
+}
 #presence h2, #contact h2{
     text-align: center;
     font-size: xxx-large;
