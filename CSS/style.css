@@ -401,6 +401,15 @@ footer #logo{
     font-weight: 700;
     margin: 0 2% 2%;
 }
+#informations a , #imformations a:visited , #informations a:checked{
+    color: white;
+    transition: 0.5s;
+}
+
+#informations li:hover a{
+    color: var(--second);
+    transition: 0.5s;
+}
 /*
 ======================================================
     Partie Map
