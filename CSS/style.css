@@ -331,3 +331,43 @@ footer #logo{
     font-size: xx-large;
     color: white;
 }
+
+
+/*
+======================================================
+    Partie Responsive
+======================================================
+*/
+
+/*@media (max-width: 1250px) { ... }*/
+
+@media (max-width: 800px) {
+
+    .pres{
+        height: 100vh;
+        grid-template-columns: 1fr;
+        align-content: stretch;
+    }
+    .pres:nth-child(even) .presContent{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .pres:nth-child(even) #carousel2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .carousel-inner2,.carousel-inner{
+        height: 100%;
+    }
+
+    #cardContainer{
+        padding: 0 10% 10%;
+        flex-direction: column;
+    }
+    #cardContainer .cardHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ }
