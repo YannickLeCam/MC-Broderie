@@ -32,6 +32,11 @@ nav{
     width: 100vw;
     background-color: rgba(149, 115, 46,0.0);
     color: white;
+    transition: 1s;
+}
+nav.scrolled{
+    background-color: rgba(94, 73, 31, 0.8);
+    transition: 1s;
 }
 nav ul {
     flex: 1;
@@ -131,6 +136,11 @@ header p {
     color: white;
     font-size: 200%;
     text-align: end;
+    transition: 0.5s;
+}
+header p:hover{
+    color: var(--second);
+    transition: 0.5s;
 }
 
 /*
@@ -164,6 +174,9 @@ header p {
 
 .card svg {
     height: 50vh;
+    max-width: 50vw;
+    fill: white;
+    transition: 0.5s;
 }
 
 .cardContent{
@@ -175,7 +188,7 @@ header p {
     padding: 5%;
     height: 100%;
     width: 100%;
-
+    transition: 0.5s;
 }
 
 .cardContent h2{
@@ -185,4 +198,66 @@ header p {
 
 .cardContent p {
     text-align: center;
+}
+
+figure:hover svg{
+    fill: var(--second);
+    transition: 0.5s;
+}
+
+.cardContent:hover {
+    color: var(--second);
+    transition: 0.5s;
+}
+
+/*
+======================================================
+    Partie Presentation
+======================================================
+*/
+
+#carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
 }
