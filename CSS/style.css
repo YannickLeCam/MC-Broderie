@@ -154,7 +154,7 @@ header p:hover{
     display: flex;
     flex-direction: column;
 }
-.card{
+.pres{
     width: 100vw;
     height: 50vh;
     display: grid;
@@ -163,7 +163,7 @@ header p:hover{
     position: relative;
 }
 
-.card figure{
+.pres figure{
     height: 100%;
     width: 100%;
     background-color: var(--main);
@@ -172,14 +172,14 @@ header p:hover{
     align-items: center;
 }
 
-.card svg {
+.pres svg {
     height: 50vh;
     max-width: 50vw;
     fill: white;
     transition: 0.5s;
 }
 
-.cardContent{
+.presContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,12 +191,12 @@ header p:hover{
     transition: 0.5s;
 }
 
-.cardContent h2{
+.presContent h2{
     font-size: x-large;
     margin-bottom: 10%;
 }
 
-.cardContent p {
+.presContent p {
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ figure:hover svg{
     transition: 0.5s;
 }
 
-.cardContent:hover {
+.presContent:hover {
     color: var(--second);
     transition: 0.5s;
 }
