@@ -139,15 +139,15 @@ header img {
 header h1 {
     font-family: "Bona Nova SC", cursive;
     color: var(--second);
-    font-size: 500%;
-    font-weight: 200;
+    font-size: 8vw;
+    font-weight: 600;
     margin-block-start: 0;
     font-family: "MonteCarlo", cursive;
 }
 header p {
     font-family: "Bona Nova SC", cursive;
     color: white;
-    font-size: 200%;
+    font-size: 3vw;
     text-align: end;
     transition: 0.5s;
 }
@@ -197,6 +197,10 @@ header p:hover{
     transition: 1s;
 }
 
+.card:hover svg {
+    fill:var(--second);
+    transition: 1s;
+}
 .card:hover p {
     color: var(--second);
     transition: 1s;
@@ -474,5 +478,16 @@ footer #logo{
 
     #informations{
         grid-template-columns: 1fr;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+    #navbar #logo{
+        width: 100%;
+        position:relative;
+        left: 0;
+        text-align: center;
+        margin: 0;
     }
  }
